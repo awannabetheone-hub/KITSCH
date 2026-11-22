@@ -77,7 +77,7 @@ function jump(){
         verticalVelocity= jumpSpeed;
     }
 }
-
+                  
 document.querySelector("#jump-button").addEventListener("pointerdown", (event) =>{
     event.preventDefault();
     jump();
@@ -168,7 +168,7 @@ const wallTexture=textureLoader.load(
 );
 wallTexture.colorSpace=THREE.SRGBColorSpace;
 
-const ceilingTexture =textureLoader.load("/asset/the%20world/ceiling.png");
+const ceilingTexture =textureLoader.load("/asset/the%20world/wall.png");
 ceilingTexture.colorSpace= THREE.SRGBColorSpace;
 
 // Floor
@@ -293,7 +293,7 @@ if (window.matchMedia("(max-width: 768px)").matches){
         await screen.orientation.lock("landscape");
     } catch {
         //This browser or device may not support orientation locking.
-    }
+    } 
 }
 
 if (!isOpen){
